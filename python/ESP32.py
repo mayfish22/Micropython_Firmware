@@ -19,7 +19,7 @@ if __name__=="__main__":
         while True:
             print("\n\n==================== 燒錄韌體 ====================\n\n")
             os.system("python.exe Scripts\\esptool.py --chip esp32 --port "+com_port+" erase_flash")
-            os.system("python.exe Scripts\\esptool.py --chip esp32 --port "+com_port+" --baud 460800 write_flash -z 0x1000 esp32-20210902-v1.17.bin")
+            os.system("python.exe Scripts\\esptool.py --chip esp32 --port "+com_port+" --baud 460800 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin")
 
             print("\n\n==================== 測試韌體 ====================\n\n")
             pyb = pyboard.Pyboard(com_port)
